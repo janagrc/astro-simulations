@@ -122,13 +122,13 @@ const getPhaseSlot = function(moonPhase) {
  * orbit), return the time, in hours, since it's been a New Moon (180
  * degrees).
  *
- * The moon's synodic period is 29.530589 days, or 708.734136 hours,
+ * The moon's synodic period is 29.530589 days, or 708.7341327 hours,
  * so that's how long it takes for the moon to complete its orbit
  * around the earth. So, this time interval can be computed with the
  * moonPhase value.
  */
 const getTimeSinceNewMoon = function(phase) {
-    return (phase + Math.PI) / ((Math.PI * 2) / 708.734136);
+    return (phase + Math.PI) / ((Math.PI * 2) / 708.7341327);
 }
 
 /*
